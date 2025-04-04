@@ -156,4 +156,9 @@ public class Database {
             e.printStackTrace();
         }
     }
+    
+     public static Validator getValidators(int entityCode) {
+
+        return validators.get(entityCode);
+    }
 }
