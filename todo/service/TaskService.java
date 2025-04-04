@@ -48,6 +48,8 @@ public class TaskService {
             System.out.println("Title: ");
             String title = input.nextLine();
             task.setTitle(title);
+            Validator v = Database.getValidators(Task.TASK_ENTITY_CODE);
+            v.validate(task);
 
             System.out.println("Description: ");
             String description = input.nextLine();
